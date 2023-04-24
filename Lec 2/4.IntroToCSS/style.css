@@ -1,0 +1,23 @@
+p{
+    color: purple;
+}
+
+#heading{
+    color: orange;
+}
+
+.one{
+    color: hotpink;
+}
+
+a[href="http://google.com"]{
+    color: aqua;
+}
+
+a[href="http://facebook.com"]{
+    color: pink;
+}
+
+*{
+    border: 2px solid black;
+}
