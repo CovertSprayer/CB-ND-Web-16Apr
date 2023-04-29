@@ -15,6 +15,82 @@ span#div-wala-span{
 
 /* ========== general siblings ============== */
 
-li#select~li{
+/* li#select~li{
     color: red;
+} */
+
+
+
+/* =============pseudo class================== */
+
+nav{
+    background-color: black;
+    padding: 8px;
 }
+
+nav a{
+    margin-left: 10px;
+}
+
+nav a:link{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:visited{
+    color: white;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav a:active{
+    color: red;
+    background-color: yellow;
+}
+
+
+/* ol li:first-child{
+    background-color: orange;
+}
+
+ol li:last-child{
+    background-color: plum;
+} */
+
+ol li:nth-child(3n+3){
+    background-color: blue;
+}
+
+/* ============= pseudo elements============= */
+ul li::before{
+    content: "\1F4DE";
+}
+
+ul li::after{
+    content: "\1F4DE";
+}
+
+.contanier p::first-letter{
+    font-size: 50px;
+}
+
+#first-div{
+    background-color: brown;
+}
+
+.contanier{
+    background-color: red;
+}
+
+div{
+    background-color: teal;
+}
+
+/* div{
+    background-color: red;
+} */
+
+
+

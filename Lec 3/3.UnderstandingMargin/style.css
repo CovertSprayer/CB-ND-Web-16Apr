@@ -1,0 +1,48 @@
+.parent{
+    border: 2px solid black;
+    /* height: 400px; */
+    width: 900px;
+    /* margin-left: 200px;
+    margin-top: 80px; */
+
+    /* margin: 80px 0 0 200px ; */
+    /* margin: 80px 200px; */
+    margin: 0 auto;
+
+}
+
+.child{
+    border: 2px solid black;
+    /* height: 50px; */
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+    
+}
+
+.img1{
+    width: 30%;
+    float: right;
+}
+
+.img2{
+    width: 30%;
+    float: left;
+}
+
+p{
+    /* float: right; */
+    border: 2px solid red;
+    /* clear: right; */
+}
+
+/* .clearfix{
+    clear: both;
+    display: block;
+} */
+
+/* .child-1::after{
+    content: "";
+    display: block;
+    clear: both;
+} */

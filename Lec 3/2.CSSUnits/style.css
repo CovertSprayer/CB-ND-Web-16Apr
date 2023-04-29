@@ -1,0 +1,20 @@
+html{
+    font-size: 30px;
+}
+
+ul li{
+    font-size: 2rem;
+}
+
+.parent{
+    background-color: aqua;
+    height: 70vh;
+    width: 100vw;
+}
+
+.child{
+    background-color: red;
+    height: 100%;
+    width: 50%;
+}
+
