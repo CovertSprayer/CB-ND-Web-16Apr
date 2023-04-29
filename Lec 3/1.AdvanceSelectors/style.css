@@ -1,0 +1,20 @@
+/* ============= descendent combinators =========== */
+span#div-wala-span{
+    color: aqua;
+}
+
+/* ============ child combinator ========== */
+/* ul>li{
+    color: red;
+} */
+
+/* ================= immediate siblings ======== */
+/* li+li{
+    color: red;
+} */
+
+/* ========== general siblings ============== */
+
+li#select~li{
+    color: red;
+}
