@@ -1,0 +1,15 @@
+span,div{
+    border: 2px solid black;
+}
+
+span{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+div{
+    width: 70vw;
+    margin: 0 auto;
+    height: 6rem;
+}
