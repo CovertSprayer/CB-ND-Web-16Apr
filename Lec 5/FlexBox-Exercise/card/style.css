@@ -1,0 +1,31 @@
+.container{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    width: 80vw;
+    margin: auto;
+    justify-content: center;
+}
+
+.card{
+    border: 2px solid black;
+    height: 280px;
+    width: 200px;
+    /* padding: 4px; */
+}
+
+.section-A{
+    /* border: 2px solid red; */
+}
+
+.section-A img{
+    width: 100%;
+}
+
+.section-B p{
+    /* border: 2px solid green; */
+    font-size: 10px;
+    text-align: justify;
+    padding: 6px;
+}
