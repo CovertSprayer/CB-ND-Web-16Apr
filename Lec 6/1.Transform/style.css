@@ -1,0 +1,33 @@
+.container{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: chocolate;
+    margin: auto;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* -------- rotate ------------ */
+    /* transform: rotateX(-90deg);
+    transform: rotateY(-90deg);
+    transform: rotateZ(-90deg); */
+
+    /* ------------ translate ----------- */
+    /* transform: translateX(200px) translateY(200px); */
+    /* transform: translateZ(200px); */
+
+    /* ------------------ skew -------------- */
+    /* transform: skewX(25deg) rotateZ(30deg); */
+    /* transform: skewY(25deg); */
+
+    /* --------------- scale ------------------ */
+    /* transform: scale(2) */
+    transition-duration: 2s;
+}
+
+.container:hover{
+    transform: scale(1.5);
+    /* transition-duration: 2s; */
+}
