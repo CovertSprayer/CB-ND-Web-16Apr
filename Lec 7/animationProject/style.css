@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    background: url('./img/Space.png') rgba(106, 106, 189, 0.884);
+    position: relative;
+    /* background-position: 50rem 0; */
+    /* background-repeat: no-repeat; */
+    animation: bgMove 3.5s ease-in-out forwards;
+}
+
+.rocket{
+    /* border: 2px solid black; */
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 150px;
+    left: 500px;
+    transform: rotate(45deg);
+    animation: rocketMove 2s ease-in-out infinite,
+                rocketRotate 4s ease-in-out 7.5s forwards;
+                /* rocketLaunch s ease-in-out 9.5s forwards; */
+}
+
+.cody{
+    /* border: 2px solid black; */
+    width: 100px;
+    position: absolute;
+    bottom: 150px;
+    left: -200px;
+    animation: rocketMove 2s ease-in-out infinite,
+            codyMoveForward 2s ease-in-out 3.5s forwards,
+            codyInRocket 2s ease-in-out 5.5s forwards;
+}
+
+.rocket img, .cody img{
+    width: 100%;
+}
+
+
+@keyframes bgMove{
+    100%{
+        background-position: 9800% 0;
+    }
+}
+
+@keyframes rocketMove{
+    0%{
+        bottom: 150px;
+    }
+    50%{
+        bottom: 250px;
+    }
+    100%{
+        bottom: 150px;
+    }
+
+}
+
+@keyframes codyMoveForward{
+    100%{
+        left: 380px;
+    }
+}
+
+@keyframes codyInRocket{
+    100%{
+        /* transform: rotateX(90deg); */
+        /* width: 0; */
+        transform: scale(0);
+        left: 650px
+    }
+}
+
+@keyframes rocketRotate{
+    50%{
+        bottom: 150px;
+        transform: rotate(-45deg);
+
+    }
+    100%{
+        transform: rotate(-45deg);
+        bottom: 1000px;
+    }
+}
+
+/* @keyframes rocketRotate{
+    100%{
+        transform: rotate(-45deg);
+    }
+} */
+
+/* @keyframes rocketLaunch{
+    100%{
+        bottom: 1000px;
+    }
+} */
+
