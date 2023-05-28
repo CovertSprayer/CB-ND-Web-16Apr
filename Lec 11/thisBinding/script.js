@@ -9,7 +9,7 @@
 
 // fun();
 
-//  ----------------- implicite
+//  ----------------- implicit
 
 let obj = {
     num:8934598,
@@ -42,8 +42,6 @@ let student2 = {
     age:20,
     rollNo:1
 }
-
-
 // updateAge.call(object, firstArgument, secondArg, and so on...)
 
 updateAge.apply(student1, [18, 'defghi'])
@@ -51,3 +49,22 @@ updateAge.apply(student1, [18, 'defghi'])
 // updateAge.call(student2, 28);
 console.log(student1);
 // console.log(student2);
+
+
+
+// --------------- constructor function
+
+function Student(name, age, rollNo){
+    this.name = name;
+    this.age = age;
+    this.rollNo = rollNo;
+
+    this.getRollNo = function(){
+        console.log(this.rollNo);
+    }
+}
+
+let Student3 = new Student('salman khan', 65, 156); 
+
+Student3.getRollNo();
+
