@@ -49,6 +49,9 @@ downloadFile('https://facebook.com/profile.jpg')
 // downloadFile('https://facebook.com/profile.jpg')
 //     .then((file)=>{
 //         console.log('File Downloaded Successfully as', file);
-//         compressFile()
+//         compressFile(file)
+                // .then((compressedFile)=>{
+                //     console.log('File compressed Successfully as', compressedFile);
+                // })
 //     })
 //     .catch(err => console.log(err));

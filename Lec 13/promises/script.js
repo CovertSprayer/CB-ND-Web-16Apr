@@ -19,7 +19,7 @@
 //     })
 
 
-function fetch(){
+function fetchData(){
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             let data = [{id:1, name:'laptop', price:200}, {id:2, name:'phone', price:100}, {id:3, name:'pen', price:50}]
@@ -28,7 +28,7 @@ function fetch(){
     })
 }
 
-fetch()
+fetchData()
     .then((data)=>{
         console.log(data);
         let finalData = data.filter((item)=>{
