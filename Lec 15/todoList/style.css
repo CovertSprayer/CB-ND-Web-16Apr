@@ -59,3 +59,7 @@ h1{
 span, #btn, .checkbox{
     cursor: pointer;
 }
+
+.checked{
+    text-decoration: line-through;
+}

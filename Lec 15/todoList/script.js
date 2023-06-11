@@ -26,10 +26,31 @@ btn.addEventListener('click', (e)=>{
 
 taskList.addEventListener('click', (e)=>{
     console.log(e.target.getAttribute('class'));
-    const tastText = e.target.getAttribute('class');
+    const taskText = e.target.getAttribute('class');
 
-    if(tastText === 'bin'){
-        e.target.parentElement.parentElement.remove();
+    if(taskText === 'bin'){
+        const task = e.target.parentElement.parentElement;
+        task.remove();
+    }
+
+    else if(taskText === 'up-arrow'){
+        const currTask = e.target.parentElement.parentElement;
+        // console.log(currTask);
+        const prevTask = currTask.previousElementSibling;
+        // console.log(prevTask);
+        prevTask.before(currTask);
+    }
+
+    else if(taskText === 'down-arrow'){
+        const currTask = e.target.parentElement.parentElement;
+        // console.log(currTask);
+        const nextTask = currTask.nextElementSibling;
+        // console.log(prevTask);
+        nextTask.after(currTask);
+    }
+
+    else if(taskText === 'checkbox'){
+        e.target.nextElementSibling.classList.toggle('checked');
     }
 
 })
