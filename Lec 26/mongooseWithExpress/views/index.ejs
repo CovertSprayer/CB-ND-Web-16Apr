@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+        <% for( let user of users ) { %>
+            <div style="border:2px solid black; width:200px">
+                <h3><%= user.name %></h3>
+                <p><%= user.email %></p>
+                <form action="/users/<%= user._id %>?_method=DELETE" method="post">
+                    <button>Delete</button>
+                </form>
+            </div>
+        <% } %>
+    </section>
+
+</body>
+</html>
