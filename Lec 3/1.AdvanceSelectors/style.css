@@ -9,15 +9,15 @@ span#div-wala-span{
 } */
 
 /* ================= immediate siblings ======== */
-/* li+li{
+/* li#select+li{
     color: red;
 } */
 
 /* ========== general siblings ============== */
 
-/* li#select~li{
+li#select~li{
     color: red;
-} */
+}
 
 
 
