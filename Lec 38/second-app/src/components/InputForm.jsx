@@ -1,8 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
+import {v4 as uuid} from 'uuid'
 
-const InputForm = () => {
+const InputForm = (props) => {
+
+  const [input, setInput] = useState('');
+
+  function submitHandler(e){
+    e.preventDefault();
+    // console.log(input);
+    const newTodo = {id:uuid(), text:input};
+    props.addTodo(newTodo);
+    setInput('');
+  }
+
+  function changeHandler(e){
+    setInput(e.target.value);
+  }
+
   return (
-    <div>InputForm</div>
+    <div>
+        <form onSubmit={submitHandler}>
+            <input onChange={changeHandler} type="text" placeholder='Type here...' value={input}/>
+            <button>Add</button>
+        </form>
+    </div>
   )
 }
 
